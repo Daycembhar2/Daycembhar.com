@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daycem Bhar — Software Engineer · Full-Stack &amp; Mobile Developer</title>
+<meta name="description" content="Daycem Bhar — Software Engineer specializing in full-stack web platforms and cross-platform mobile applications. Angular, Spring Boot, Flutter, FastAPI, Python. Based in Nabeul, Tunisia — open to remote roles worldwide.">
+<meta name="keywords" content="Daycem Bhar, Software Engineer, Full-Stack Developer, Mobile Developer, Angular Developer, Spring Boot Developer, Flutter Developer, Tunisia Software Engineer, Remote Software Engineer, QA Engineer, AI Engineer">
+<meta name="author" content="Daycem Bhar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://daycembhar2.github.io/Daycembhar.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daycem Bhar — Software Engineer · Full-Stack &amp; Mobile Developer">
+<meta property="og:description" content="Full-Stack &amp; Mobile Engineer building production-grade platforms — from AI-powered SaaS to cross-platform mobile apps. Available for remote work worldwide.">
+<meta property="og:url" content="https://daycembhar2.github.io/Daycembhar.com/">
+<meta property="og:image" content="assets/images/profile/profile-final">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Daycem Bhar — Software Engineer">
+<meta name="twitter:description" content="Full-Stack &amp; Mobile Engineer — Angular, Spring Boot, Flutter, FastAPI. Open to remote roles worldwide.">
+<meta name="twitter:image" content="assets/images/profile/profile-final.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230B0B09%22/><text x=%2250%22 y=%2266%22 font-size=%2248%22 font-family=%22Georgia,serif%22 fill=%22%23C9A876%22 text-anchor=%22middle%22>D</text></svg>">
+
+<!-- JSON-LD structured data for recruiters / Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Daycem Bhar",
+  "jobTitle": "Software Engineer",
+  "description": "Full-Stack & Mobile Engineer specializing in Angular, Spring Boot, Flutter and FastAPI.",
+  "url": "https://daycembhar2.github.io/Daycembhar.com/",
+  "email": "mailto:daycembhar3@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nabeul",
+    "addressCountry": "Tunisia"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/daycem-bhar-63b3672a5",
+    "https://github.com/Daycembhar2"
+  ],
+  "knowsAbout": ["Angular", "Spring Boot", "Flutter", "FastAPI", "Python", "Java", "Full-Stack Development", "Mobile Development", "Software Testing"]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/experience.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/cv.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============================================================
+     PRELOADER
+     ============================================================ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__mark">
+    DB.
+    <div class="preloader__bar"></div>
+    <span class="preloader__label">Loading Portfolio</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#hero" class="nav__logo">DB<span>.</span></a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#certifications" class="nav__link">Certifications</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn--primary btn--sm">Hire Me</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="nav__mobile" id="navMobile" aria-hidden="true">
+  <button class="nav__mobile-close" id="navMobileClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <nav class="nav__mobile-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__mobile-foot">
+    <a href="#contact" class="btn btn--on-dark">Hire Me</a>
+    <div class="nav__mobile-social">
+      <a href="https://linkedin.com/in/daycem-bhar-63b3672a5" class="btn btn--icon-only btn--ghost-on-dark" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.94 6 2.5 6S0 4.88 0 3.5 1.06 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5h4.5V23H.24V8.5zM8.5 8.5h4.31v1.98h.06c.6-1.13 2.07-2.33 4.26-2.33 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.94c0-1.65-.03-3.78-2.3-3.78-2.3 0-2.66 1.8-2.66 3.66V23H8.5V8.5z"/></svg>
+      </a>
+      <a href="https://github.com/Daycembhar2" class="btn btn--icon-only btn--ghost-on-dark" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<main>
+<section class="hero" id="hero">
+  <div class="hero__bg-grid" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+
+    <div class="hero__content">
+      <div class="hero__eyebrow-row" data-reveal>
+        <span class="hero__status">
+          <span class="hero__status-dot"></span>
+          Available for remote work
+        </span>
+      </div>
+
+      <h1 class="hero__name" data-reveal data-reveal-delay="1">
+        Daycem Bhar<br>Software <em>Engineer.</em>
+      </h1>
+
+      <p class="hero__role" data-reveal data-reveal-delay="2">
+        Full-Stack &amp; Mobile Engineer <span class="sep">/</span> Nabeul, Tunisia <span class="sep">/</span> Remote-Ready
+      </p>
+
+      <p class="hero__intro" data-reveal data-reveal-delay="3">
+        I design and build <strong>production-grade platforms</strong> — from AI-powered SaaS applications to cross-platform mobile solutions engineered for real-world reliability. Fluent across the full stack, from relational database design to reactive front-end interfaces.
+      </p>
+
+      <div class="hero__ctas" data-reveal data-reveal-delay="4">
+        <button class="btn btn--primary" id="downloadCvHero">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 18v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/></svg>
+          Download CV
+        </button>
+        <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        <a href="#projects" class="btn btn--ghost">View Projects</a>
+      </div>
+
+      <div class="hero__meta-row" data-reveal data-reveal-delay="5">
+        <div class="hero__meta-item">
+          <span class="hero__meta-value" data-counter data-target="4"><span class="unit">+</span></span>
+          <span class="hero__meta-label">Production Projects</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-value" data-counter data-target="2"><span class="unit">+</span></span>
+          <span class="hero__meta-label">Years of Experience</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-value" data-counter data-target="15"><span class="unit">+</span></span>
+          <span class="hero__meta-label">Technologies</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-value" data-counter data-target="4"></span>
+          <span class="hero__meta-label">Languages Spoken</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__portrait-wrap" data-reveal data-reveal-delay="2">
+      <div class="hero__portrait-frame">
+        <img src="assets/images/profile/profile-final.jpg" alt="Portrait of Daycem Bhar, Software Engineer" width="650" height="840">
+        <div class="hero__portrait-deco" aria-hidden="true"></div>
+        <div class="hero__portrait-tag">
+          <span><strong>Daycem Bhar</strong>Full-Stack &amp; Mobile Engineer</span>
+        </div>
+      </div>
+      <div class="hero__badge-float hero__badge-float--top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <div class="hero__badge-float-text">
+          <strong>Angular · Spring Boot</strong>
+          <span>Core stack</span>
+        </div>
+      </div>
+      <div class="hero__badge-float hero__badge-float--bottom">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div class="hero__badge-float-text">
+          <strong>QA Certified</strong>
+          <span>Manual + Automated</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero__scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS STRIP
+     ============================================================ -->
+<section class="stats-strip">
+  <div class="wrap stats-strip__grid">
+    <div class="stats-strip__item">
+      <div class="stats-strip__value"><span data-counter data-target="4">0</span><span class="unit">+</span></div>
+      <div class="stats-strip__label">Production Projects</div>
+    </div>
+    <div class="stats-strip__item">
+      <div class="stats-strip__value"><span data-counter data-target="2">0</span><span class="unit">+</span></div>
+      <div class="stats-strip__label">Years of Experience</div>
+    </div>
+    <div class="stats-strip__item">
+      <div class="stats-strip__value"><span data-counter data-target="15">0</span><span class="unit">+</span></div>
+      <div class="stats-strip__label">Technologies</div>
+    </div>
+    <div class="stats-strip__item">
+      <div class="stats-strip__value"><span data-counter data-target="4">0</span></div>
+      <div class="stats-strip__label">Languages Spoken</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about__grid">
+      <div data-reveal>
+        <span class="eyebrow">01 — About Me</span>
+        <p class="about__statement" style="margin-top: var(--sp-md);">
+          Engineering software that <em>actually works.</em>
+        </p>
+      </div>
+
+      <div class="about__body" data-reveal data-reveal-delay="1">
+        <p>
+          I'm a Software Engineer with hands-on experience delivering <strong>full-stack web platforms</strong> and <strong>cross-platform mobile applications</strong> across diverse industries — from recruitment SaaS to agricultural field operations.
+        </p>
+        <p>
+          My engineering approach prioritizes clean architecture, reliability under real-world conditions, and interfaces that don't require a manual. I'm fluent across the entire stack — from relational database design to REST API development to reactive front-end interfaces, with growing expertise in AI-assisted features and Python-based services.
+        </p>
+        <p>
+          Based in <strong>Nabeul, Tunisia</strong> — open to remote engagements worldwide and long-term collaborations with ambitious teams.
+        </p>
+
+        <div class="about__tags">
+          <span class="about__tag">🏗 Clean Architecture</span>
+          <span class="about__tag">🔌 REST API Design</span>
+          <span class="about__tag">📱 Cross-Platform Mobile</span>
+          <span class="about__tag">🤖 AI Integration</span>
+          <span class="about__tag">🌍 Remote-Ready</span>
+          <span class="about__tag">🧪 QA &amp; Manual Testing</span>
+        </div>
+
+        <div class="about__location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7.1-7-12a7 7 0 0 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Nabeul, Tunisia — Institut Supérieur de l'Informatique de Médenine
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section class="section" id="skills" style="background: var(--c-paper-dim);">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="section-head__title">
+        <span class="eyebrow">02 — Expertise</span>
+        <h2>Technical <em class="italic-accent">Proficiency.</em></h2>
+      </div>
+      <p class="lede" style="margin:0;">A diverse toolkit built across professional engagements and shipped products.</p>
+    </div>
+
+    <div class="skills__layout">
+
+      <!-- Frontend -->
+      <div class="skill-cat" data-reveal data-reveal-delay="1">
+        <div class="skill-cat__head">
+          <div class="skill-cat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m9 18 6-6-6-6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat__title">Frontend</div>
+            <div class="skill-cat__count">5 technologies</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-row__name">Angular</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:92%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">React</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:75%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Vue</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:78%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">TypeScript</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:85%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">JavaScript</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:90%"></div></div></div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-cat" data-reveal data-reveal-delay="2">
+        <div class="skill-cat__head">
+          <div class="skill-cat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".6" fill="currentColor"/><circle cx="7" cy="17" r=".6" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat__title">Backend</div>
+            <div class="skill-cat__count">4 technologies</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-row__name">Spring Boot</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:90%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Java</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:88%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Node.js</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:72%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Express</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:70%"></div></div></div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="skill-cat" data-reveal data-reveal-delay="3">
+        <div class="skill-cat__head">
+          <div class="skill-cat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat__title">Mobile</div>
+            <div class="skill-cat__count">2 technologies</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-row__name">Flutter</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:93%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Android</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:68%"></div></div></div>
+        </div>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-cat" data-reveal data-reveal-delay="1">
+        <div class="skill-cat__head">
+          <div class="skill-cat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat__title">Database</div>
+            <div class="skill-cat__count">3 technologies</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-row__name">PostgreSQL</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:80%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">MySQL</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:90%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">SQL Server</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:82%"></div></div></div>
+        </div>
+      </div>
+
+      <!-- AI & Data -->
+      <div class="skill-cat" data-reveal data-reveal-delay="2">
+        <div class="skill-cat__head">
+          <div class="skill-cat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat__title">AI &amp; Data</div>
+            <div class="skill-cat__count">4 technologies</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-row__name">Python</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:85%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Machine Learning</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:68%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">LSTM</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:60%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Data Analysis</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:72%"></div></div></div>
+        </div>
+      </div>
+
+      <!-- QA / Methods -->
+      <div class="skill-cat" data-reveal data-reveal-delay="3">
+        <div class="skill-cat__head">
+          <div class="skill-cat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat__title">QA &amp; Methods</div>
+            <div class="skill-cat__count">4 practices</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row"><span class="skill-row__name">Manual Testing</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:88%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Bug Reporting</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:90%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">UML / Merise</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:80%"></div></div></div>
+          <div class="skill-row"><span class="skill-row__name">Agile / SDLC</span><div class="skill-row__bar-track"><div class="skill-row__bar-fill" style="--pct:78%"></div></div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tools -->
+    <div class="tools-row" data-reveal data-reveal-delay="4">
+      <span class="tool-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>Git</span>
+      <span class="tool-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Docker</span>
+      <span class="tool-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3 12 12"/></svg>Postman</span>
+      <span class="tool-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Selenium</span>
+      <span class="tool-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>VS Code</span>
+      <span class="tool-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>Android Studio</span>
+      <span class="tool-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>GitHub</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section class="section section--dark" id="experience">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="section-head__title">
+        <span class="eyebrow">03 — Work History</span>
+        <h2>Professional <em class="italic-accent">Experience.</em></h2>
+      </div>
+      <p class="lede" style="margin:0;">Internships that shipped real features to real users.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-item__dot"></div>
+        <div class="timeline-item__card">
+          <div class="timeline-item__top">
+            <div>
+              <div class="timeline-item__role">Full-Stack Developer Intern</div>
+              <div class="timeline-item__org">Vibracom</div>
+            </div>
+            <span class="timeline-item__period">2026</span>
+          </div>
+          <ul class="timeline-item__list">
+            <li>Built a multi-role internship and job platform for students, companies, and university staff — three distinct dashboards sharing one data model.</li>
+            <li>Developed job search, application management, internship validation, CV analysis, and student task-tracking modules end-to-end.</li>
+            <li>Implemented an AI-assisted recommendation engine to match candidates with relevant internship and job opportunities.</li>
+            <li>Conducted manual testing cycles to detect, document, and resolve bugs across application modules.</li>
+          </ul>
+          <div class="timeline-item__stack">
+            <span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>Python</span><span>FastAPI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal data-reveal-delay="1">
+        <div class="timeline-item__dot"></div>
+        <div class="timeline-item__card">
+          <div class="timeline-item__top">
+            <div>
+              <div class="timeline-item__role">Mobile Developer Intern</div>
+              <div class="timeline-item__org">Ezzayra Solutions</div>
+            </div>
+            <span class="timeline-item__period">Jul – Aug 2025</span>
+          </div>
+          <ul class="timeline-item__list">
+            <li>Developed Smart Terre, a cross-platform mobile application for agricultural agents to manage farmers, parcels, and geolocation-based agricultural data.</li>
+            <li>Implemented offline-first features using Flutter and SQLite, enabling field agents to work reliably in low-connectivity environments.</li>
+            <li>Integrated PHP APIs and SQL Server database operations for online synchronization and data management.</li>
+            <li>Produced UML documentation and performed manual testing, bug tracking, and functional validation before delivery.</li>
+          </ul>
+          <div class="timeline-item__stack">
+            <span>Flutter</span><span>SQLite</span><span>PHP</span><span>SQL Server</span><span>UML</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal data-reveal-delay="2">
+        <div class="timeline-item__dot"></div>
+        <div class="timeline-item__card">
+          <div class="timeline-item__top">
+            <div>
+              <div class="timeline-item__role">Academic Projects</div>
+              <div class="timeline-item__org">Institut Supérieur de l'Informatique de Médenine</div>
+            </div>
+            <span class="timeline-item__period">2023 – 2026</span>
+          </div>
+          <ul class="timeline-item__list">
+            <li>Designed and built a Student Absence Management desktop application with full CRUD operations, date/class filtering, and a normalized MySQL schema.</li>
+            <li>Applied UML and Merise modeling methodologies across coursework projects, from conceptual data models to deployment.</li>
+            <li>Practiced Agile/SDLC workflows in team-based software projects, including sprint planning and peer code review.</li>
+          </ul>
+          <div class="timeline-item__stack">
+            <span>Java</span><span>C#</span><span>MySQL</span><span>UML</span><span>Merise</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="section-head__title">
+        <span class="eyebrow">04 — Portfolio</span>
+        <h2>Featured <em class="italic-accent">Projects.</em></h2>
+      </div>
+      <p class="lede" style="margin:0;">Production-grade solutions engineered to solve real-world problems with clean architecture and measurable impact.</p>
+    </div>
+
+    <div class="proj-filter" data-reveal>
+      <button class="proj-filter__btn is-active" data-filter="all">All Work</button>
+      <button class="proj-filter__btn" data-filter="web">Web Platforms</button>
+      <button class="proj-filter__btn" data-filter="mobile">Mobile Apps</button>
+      <button class="proj-filter__btn" data-filter="qa">QA &amp; Testing</button>
+    </div>
+
+    <div class="proj-list">
+
+      <!-- ============== PROJECT 01 — INTERNMATCH ============== -->
+      <article class="proj-card" data-reveal data-category="web">
+        <div class="proj-card__media">
+          <div class="carousel" id="carousel-internmatch">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="assets/images/internmatch/06-home.png" alt="InternMatch homepage with hero search and recommended sectors" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/14-student-discover.png" alt="InternMatch student dashboard with AI-matched offer recommendations" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/03-offers-list.png" alt="InternMatch offers listing with filters" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/02-apply-form.png" alt="InternMatch application form with AI cover letter assistance" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/08-ai-description.png" alt="InternMatch AI-improved job description modal" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/09-post-offer-form.png" alt="InternMatch employer offer-posting form" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/11-manage-offers.png" alt="InternMatch company offer management dashboard" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/10-applications-list.png" alt="InternMatch received applications with AI candidate scoring" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/12-company-dashboard.png" alt="InternMatch company analytics dashboard with recruitment charts" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/07-university-dashboard.png" alt="InternMatch university institution dashboard" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/01-pricing.png" alt="InternMatch pricing plans with payment modal" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/04-signup.png" alt="InternMatch role-based signup flow" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/internmatch/05-contact.png" alt="InternMatch contact page with map" loading="lazy"></div>
+            </div>
+            <button class="carousel__nav carousel__nav--prev" aria-label="Previous screenshot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="carousel__nav carousel__nav--next" aria-label="Next screenshot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div class="carousel__counter"><span class="carousel-current">1</span> / <span class="carousel-total">13</span></div>
+            <div class="carousel__dots"></div>
+          </div>
+        </div>
+
+        <div class="proj-card__body">
+          <div class="proj-card__index">PROJECT 01 / 04 — WEB PLATFORM</div>
+          <h3 class="proj-card__title">InternMatch</h3>
+          <div class="proj-card__tagline">Internship &amp; Job Recommendation Platform</div>
+          <p class="proj-card__desc">
+            A full-stack recruitment SaaS connecting students, companies, and universities through one platform. Features role-based dashboards, AI-powered CV analysis and candidate scoring, smart job recommendations, an AI description writer for employers, subscription billing, and end-to-end internship workflow management — from application to validated stage.
+          </p>
+
+          <div class="proj-card__stats">
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">3</div>
+              <div class="proj-card__stat-label">User Roles</div>
+            </div>
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">13+</div>
+              <div class="proj-card__stat-label">Core Screens</div>
+            </div>
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">AI</div>
+              <div class="proj-card__stat-label">CV Matching</div>
+            </div>
+          </div>
+
+          <div class="proj-card__stack-label">Tech Stack</div>
+          <div class="proj-card__stack">
+            <span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>Python</span><span>FastAPI</span><span>REST API</span>
+          </div>
+
+          <ul class="proj-card__features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Role-based dashboards (Student / Company / University)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>AI candidate scoring &amp; CV analysis</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>AI-assisted job description writer</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Subscription plans &amp; payment flow</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Recruitment analytics &amp; charts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>End-to-end application workflow</li>
+          </ul>
+
+          <div class="proj-card__actions">
+            <a href="https://github.com/Daycembhar2" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a href="https://daycembhar2.github.io/Daycembhar.com/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============== PROJECT 02 — SMART TERRE ============== -->
+      <article class="proj-card" data-reveal data-category="mobile">
+        <div class="proj-card__media">
+          <div class="carousel" id="carousel-smartterre">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="assets/images/smartterre/01-login.png" alt="Smart Terre login screen" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/smartterre/02-dashboard.png" alt="Smart Terre agent dashboard with parcel and farmer summary" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/smartterre/03-parcelles-list.png" alt="Smart Terre parcels list with hectare totals" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/smartterre/04-new-parcelle.png" alt="Smart Terre new parcel creation form" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/smartterre/05-draw-parcelle.png" alt="Smart Terre satellite map parcel drawing tool" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/smartterre/06-parcelle-detail.png" alt="Smart Terre parcel detail view with sync status" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/smartterre/07-agriculteurs-list.png" alt="Smart Terre farmers directory list" loading="lazy"></div>
+              <div class="carousel__slide"><img src="assets/images/smartterre/08-agriculteur-detail.png" alt="Smart Terre farmer profile with linked parcels" loading="lazy"></div>
+            </div>
+            <button class="carousel__nav carousel__nav--prev" aria-label="Previous screenshot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="carousel__nav carousel__nav--next" aria-label="Next screenshot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div class="carousel__counter"><span class="carousel-current">1</span> / <span class="carousel-total">8</span></div>
+            <div class="carousel__dots"></div>
+          </div>
+        </div>
+
+        <div class="proj-card__body">
+          <div class="proj-card__index">PROJECT 02 / 04 — MOBILE APP</div>
+          <h3 class="proj-card__title">Smart Terre</h3>
+          <div class="proj-card__tagline">Agricultural Parcel Management App</div>
+          <p class="proj-card__desc">
+            An offline-first Flutter application built for agricultural field agents to manage farmers, draw and measure parcels directly on satellite imagery, and synchronize data once back online. Designed for real field conditions — low connectivity, gloved hands, bright sunlight — rather than office demos.
+          </p>
+
+          <div class="proj-card__stats">
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">100%</div>
+              <div class="proj-card__stat-label">Offline-First</div>
+            </div>
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">8</div>
+              <div class="proj-card__stat-label">Core Screens</div>
+            </div>
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">GPS</div>
+              <div class="proj-card__stat-label">Geolocation</div>
+            </div>
+          </div>
+
+          <div class="proj-card__stack-label">Tech Stack</div>
+          <div class="proj-card__stack">
+            <span>Flutter</span><span>Dart</span><span>SQLite</span><span>PHP REST API</span><span>SQL Server</span>
+          </div>
+
+          <ul class="proj-card__features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Draw &amp; measure parcels on satellite maps</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Offline-first with local SQLite storage</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Online/offline sync with conflict handling</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Farmer directory linked to parcels</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Geolocation-based field data capture</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Crop &amp; hectare tracking per parcel</li>
+          </ul>
+
+          <div class="proj-card__actions">
+            <a href="https://github.com/Daycembhar2" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              GitHub
+            </a>
+            <span class="btn btn--ghost btn--sm" style="opacity:.5; cursor:not-allowed;" title="Internal field-agent tool — not publicly deployed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Internal Tool
+            </span>
+          </div>
+        </div>
+      </article>
+
+
+
+      <!-- ============== PROJECT 03 — QA / SOFTWARE TESTING ============== -->
+      <article class="qa-card" data-reveal data-category="qa">
+        <div class="qa-card__side">
+          <div class="qa-card__index">PROJECT 03 / 04 — QUALITY ASSURANCE</div>
+          <h3 class="qa-card__title">Software Testing Project</h3>
+          <div class="qa-card__tagline">Manual &amp; Automated QA Engineering</div>
+          <p class="qa-card__desc">
+            A dedicated Quality Assurance initiative applying structured manual and automated testing practices across web applications — from writing test cases and test suites to scripting browser automation and producing actionable, reproducible bug reports for development teams.
+          </p>
+
+          <div class="qa-card__methods">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Selenium</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Katalon Recorder</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Manual Testing</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Automated Testing</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Bug Reporting</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Test Suites</span>
+          </div>
+
+          <div class="qa-card__actions">
+            <a href="https://github.com/Daycembhar2" target="_blank" rel="noopener" class="btn btn--on-dark btn--sm">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              View Test Suite
+            </a>
+          </div>
+        </div>
+
+        <div class="qa-card__stats-grid">
+          <div class="qa-stat">
+            <div class="qa-stat__value"><span data-counter data-target="40"><span class="unit">+</span></span></div>
+            <div class="qa-stat__label">Test Cases Written</div>
+          </div>
+          <div class="qa-stat">
+            <div class="qa-stat__value"><span data-counter data-target="6"></span></div>
+            <div class="qa-stat__label">Test Suites</div>
+          </div>
+          <div class="qa-stat">
+            <div class="qa-stat__value"><span data-counter data-target="20"><span class="unit">+</span></span></div>
+            <div class="qa-stat__label">Bugs Reported</div>
+          </div>
+          <div class="qa-stat">
+            <div class="qa-stat__value"><span data-counter data-target="90"><span class="unit">%</span></span></div>
+            <div class="qa-stat__label">Critical Path Coverage</div>
+          </div>
+        </div>
+      </article>
+<!-- ============== PROJECT 04 — INTERACTIVE QUIZ ============== -->
+      <article class="proj-card proj-card--quiz" data-reveal data-category="academic web qa">
+        <div class="proj-card__media quiz-media">
+          <div class="quiz-video-frame">
+            <video class="quiz-video" controls preload="metadata" poster="assets/images/quiz/quiz-cover.png">
+              <source src="assets/videos/quiz-demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="quiz-video-placeholder">
+              <span class="quiz-play">▶</span>
+              <strong>Quiz App Demo</strong>
+              <small>Add your video here: assets/videos/quiz-demo.mp4</small>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card__body">
+          <div class="proj-card__index">PROJECT 04 / 05 — ACADEMIC WEB APP</div>
+          <h3 class="proj-card__title">Interactive Quiz Application</h3>
+          <div class="proj-card__tagline">Timed QCM platform with scoring, correction, and learning feedback</div>
+          <p class="proj-card__desc">
+            A web-based quiz application designed for exam preparation. It presents timed multiple-choice questions, tracks answers, calculates the final score, and displays corrections with explanations to help users understand mistakes and improve progressively.
+          </p>
+
+          <div class="proj-card__stats">
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">QCM</div>
+              <div class="proj-card__stat-label">Exam Mode</div>
+            </div>
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">Timer</div>
+              <div class="proj-card__stat-label">Real Test Flow</div>
+            </div>
+            <div class="proj-card__stat">
+              <div class="proj-card__stat-value">Score</div>
+              <div class="proj-card__stat-label">Auto Correction</div>
+            </div>
+          </div>
+
+          <div class="proj-card__stack-label">Tech Stack</div>
+          <div class="proj-card__stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>UX Testing</span>
+          </div>
+
+          <ul class="proj-card__features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Timed quiz session with clear progress tracking</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Automatic score calculation and answer validation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Correction screen with explanations for revision</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>Responsive interface suitable for desktop and mobile</li>
+          </ul>
+
+          <div class="proj-card__actions">
+            <a href="https://github.com/Daycembhar2" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub</a>
+            <a href="assets/videos/quiz-demo.mp4" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Watch Demo</a>
+          </div>
+        </div>
+      </article>
+      <!-- ============== PROJECT 04 — FINDTOUNSI ============== -->
+      <article class="proj-simple" data-reveal data-category="web">
+        <div class="proj-simple__visual">
+          <div class="proj-simple__visual-grid" aria-hidden="true"></div>
+          <span class="proj-simple__visual-mark">FT</span>
+          <span class="proj-simple__visual-badge">In Development</span>
+        </div>
+        <div class="proj-simple__body">
+          <div class="proj-card__index">PROJECT 04 / 04 — WEB PLATFORM</div>
+          <h3 class="proj-card__title">FindTounsi</h3>
+          <div class="proj-card__tagline">Local Discovery &amp; Services Platform — Tunisia</div>
+          <p class="proj-card__desc">
+            A platform concept built to help people discover local services, businesses, and opportunities across Tunisia in one place. Currently in active development — architecture and core data model in progress, with screenshots to follow as the build matures.
+          </p>
+          <div class="proj-card__stack-label">Planned Stack</div>
+          <div class="proj-card__stack">
+            <span>Angular</span><span>Spring Boot</span><span>MySQL</span>
+          </div>
+          <div class="proj-card__actions">
+            <a href="https://github.com/Daycembhar2" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CV DOWNLOAD
+     ============================================================ -->
+<section class="section section--tight" id="resume" style="background: var(--c-paper);">
+  <div class="wrap">
+    <div class="cv-block" data-reveal>
+      <div>
+        <div class="cv-block__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6M9 9h1"/></svg>
+        </div>
+        <h2 class="h3 cv-block__title">Get the full picture.</h2>
+        <p class="cv-block__desc">Download my complete resume — detailed work history, education, certifications, and the full technical skill set in one document.</p>
+        <div class="cv-block__actions">
+          <a href="assets/cv/Daycem_Bhar_CV.pdf" download="Daycem_Bhar_CV.pdf" class="btn btn--primary" id="downloadCvMain">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 18v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/></svg>
+            Download CV (PDF)
+          </a>
+          <a href="mailto:daycembhar3@gmail.com" class="btn btn--ghost">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="cv-block__counter">
+        <div class="cv-block__counter-row">
+          <span class="cv-block__counter-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 18v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/></svg>
+            CV Downloaded
+          </span>
+          <span class="cv-block__counter-value" id="cvDownloadCount">0</span>
+        </div>
+        <div class="cv-block__counter-row">
+          <span class="cv-block__counter-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-7.1-7-12a7 7 0 0 1 14 0c0 4.9-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Last Download
+          </span>
+          <span class="cv-block__counter-value" id="cvLastDownload" style="font-size: var(--fs-xs);">—</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATIONS
+     ============================================================ -->
+<section class="section" id="certifications" style="background: var(--c-paper-dim);">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="section-head__title">
+        <span class="eyebrow">05 — Credentials</span>
+        <h2>Certifications &amp; <em class="italic-accent">Training.</em></h2>
+      </div>
+      <p class="lede" style="margin:0;">Continuous learning, formally recognized.</p>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card" data-reveal data-reveal-delay="1">
+        <div class="cert-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m9 18 6-6-6-6M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+        </div>
+        <div class="cert-card__year">2026</div>
+        <div class="cert-card__title">Angular Development Certification</div>
+        <div class="cert-card__issuer">Designet Center</div>
+      </div>
+
+      <div class="cert-card" data-reveal data-reveal-delay="2">
+        <div class="cert-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".6" fill="currentColor"/><circle cx="7" cy="17" r=".6" fill="currentColor"/></svg>
+        </div>
+        <div class="cert-card__year">2026</div>
+        <div class="cert-card__title">Spring Boot Development Certification</div>
+        <div class="cert-card__issuer">Designet Center</div>
+      </div>
+
+      <div class="cert-card" data-reveal data-reveal-delay="3">
+        <div class="cert-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="cert-card__year">2026</div>
+        <div class="cert-card__title">Communication Skills Workshop</div>
+        <div class="cert-card__issuer">Professional Training</div>
+      </div>
+
+      <div class="cert-card" data-reveal data-reveal-delay="4">
+        <div class="cert-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="cert-card__year">2026</div>
+        <div class="cert-card__title">Hackathon Participation</div>
+        <div class="cert-card__issuer">Competitive Programming</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section contact" id="contact">
+  <div class="contact__bg-text" aria-hidden="true">Let's Talk</div>
+  <div class="wrap contact__inner">
+    <span class="eyebrow contact__eyebrow">06 — Get In Touch</span>
+    <h2 class="contact__title">Let's build something <em>worth shipping.</em></h2>
+    <p class="contact__sub">Open to remote roles, freelance engagements, and ambitious teams building real products. I usually reply within 24 hours.</p>
+
+    <a href="mailto:daycembhar3@gmail.com" class="contact__email-cta">
+      daycembhar3@gmail.com
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+    </a>
+
+    <div class="contact__grid">
+      <a href="https://linkedin.com/in/daycem-bhar-63b3672a5" target="_blank" rel="noopener" class="contact__card">
+        <div class="contact__card-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.94 6 2.5 6S0 4.88 0 3.5 1.06 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5h4.5V23H.24V8.5zM8.5 8.5h4.31v1.98h.06c.6-1.13 2.07-2.33 4.26-2.33 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.94c0-1.65-.03-3.78-2.3-3.78-2.3 0-2.66 1.8-2.66 3.66V23H8.5V8.5z"/></svg>
+        </div>
+        <span class="contact__card-label">LinkedIn</span>
+        <span class="contact__card-value">daycem-bhar</span>
+      </a>
+
+      <a href="https://github.com/Daycembhar2" target="_blank" rel="noopener" class="contact__card">
+        <div class="contact__card-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </div>
+        <span class="contact__card-label">GitHub</span>
+        <span class="contact__card-value">Daycembhar2</span>
+      </a>
+
+      <a href="mailto:daycembhar3@gmail.com" class="contact__card">
+        <div class="contact__card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        </div>
+        <span class="contact__card-label">Email</span>
+        <span class="contact__card-value">daycembhar3@gmail.com</span>
+      </a>
+
+      <a href="tel:+21646554351" class="contact__card">
+        <div class="contact__card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <span class="contact__card-label">Phone</span>
+        <span class="contact__card-value">+216 46 554 351</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__mark">Daycem Bhar<span>.</span></div>
+    <div class="footer__meta">© 2026 Daycem Bhar — Built with care in Nabeul, Tunisia</div>
+    <a href="#hero" class="footer__back-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- Toast for CV download confirmation -->
+<div class="cv-block__toast" id="cvToast">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>
+  <span>CV downloaded successfully</span>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

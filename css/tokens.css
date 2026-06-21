@@ -1,0 +1,81 @@
+/* ============================================================
+   DAYCEM BHAR — PORTFOLIO DESIGN TOKENS
+   Palette: ink black / warm beige / white / sand accent
+   ============================================================ */
+
+:root {
+  /* ---- Color: core ---- */
+  --c-ink:          #0B0B09;   /* near-black, primary dark */
+  --c-ink-soft:     #1A1814;   /* charcoal panel */
+  --c-ink-faint:    #2B2820;   /* lifted dark surface */
+  --c-paper:        #F6F1E7;   /* warm beige background */
+  --c-paper-dim:    #EDE5D3;   /* slightly deeper beige for cards */
+  --c-white:        #FFFFFF;
+  --c-sand:         #C9A876;   /* primary accent — muted gold/sand */
+  --c-sand-bright:  #DCBE8E;   /* hover/lighter accent */
+  --c-sand-deep:    #A6824F;   /* pressed/deep accent */
+  --c-line:         #DAD0BA;   /* hairline rule on paper */
+  --c-line-dark:    #36322A;   /* hairline rule on ink */
+  --c-text-soft:    #6B6657;   /* secondary text on paper */
+  --c-text-soft-dk: #A39C8A;   /* secondary text on ink */
+  --c-success:      #5C7A5E;
+  --c-danger:       #A85B4C;
+
+  /* ---- Typography ---- */
+  --f-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --f-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --f-mono:    "JetBrains Mono", "SF Mono", Consolas, monospace;
+
+  --fs-2xs: 0.6875rem;   /* 11px */
+  --fs-xs:  0.8125rem;   /* 13px */
+  --fs-sm:  0.9375rem;   /* 15px */
+  --fs-base:1rem;        /* 16px */
+  --fs-md:  1.125rem;    /* 18px */
+  --fs-lg:  1.375rem;    /* 22px */
+  --fs-xl:  1.75rem;     /* 28px */
+  --fs-2xl: 2.5rem;      /* 40px */
+  --fs-3xl: 3.5rem;      /* 56px */
+  --fs-4xl: 5rem;        /* 80px */
+  --fs-5xl: 6.5rem;      /* 104px */
+
+  /* ---- Spacing scale ---- */
+  --sp-3xs: 0.25rem;
+  --sp-2xs: 0.5rem;
+  --sp-xs:  0.75rem;
+  --sp-sm:  1rem;
+  --sp-md:  1.5rem;
+  --sp-lg:  2.25rem;
+  --sp-xl:  3.5rem;
+  --sp-2xl: 5.5rem;
+  --sp-3xl: 8rem;
+
+  /* ---- Layout ---- */
+  --container-w: 1280px;
+  --container-pad: clamp(1.25rem, 5vw, 4rem);
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 0.2s;
+  --dur-med: 0.45s;
+  --dur-slow: 0.8s;
+
+  /* ---- Shadow ---- */
+  --shadow-sm: 0 2px 8px rgba(11, 11, 9, 0.06);
+  --shadow-md: 0 8px 30px rgba(11, 11, 9, 0.10);
+  --shadow-lg: 0 24px 60px rgba(11, 11, 9, 0.16);
+  --shadow-gold: 0 12px 40px rgba(166, 130, 79, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
